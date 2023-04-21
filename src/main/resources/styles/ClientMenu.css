@@ -1,0 +1,87 @@
+
+.main_menu{
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+}
+
+
+
+.up_container_title{
+    -fx-background-color: #FFFFFF ;
+    -fx-background-radius: 10  ;
+    -fx-effect: dropshadow(two-pass-box,#AAAAAA, 2, 0, 0, 2);
+    -fx-font-size: 2.2em;
+    -fx-alignment: top-center;
+    -fx-label-padding: 30;
+}
+
+
+.middle_container {
+    -fx-background-color: #FFFFFF ;
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 20;
+
+}
+.middle_container Button{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+
+    -fx-background-color:#FFFFFF ;
+    -fx-text-fill: #0B4F6C ;
+    -fx-font-size: 1.2em;
+    /*
+
+
+
+    */
+
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 4, 0,0,4) ;
+    -fx-alignemt: center_left;
+}
+
+.middle_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.Button {
+    -fx-background-color: #0B4F6C    ;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+    -fx-alignemt: center_left;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 4, 0,0,4) ;
+}
+
+.report_container{
+    -fxbackground-color: white ;
+    -fx-background-radius: 10 ;
+    -fx-alignment: top-center;
+    -fx-spacing: 10;
+    -fx-padding: 10, 0, 10, 0;
+
+}
+
+.report_container Text{
+
+    -fx-font-width: bold;
+    -fx-fill: black;
+}
+
+.report_container Label {
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.report_container Button{
+    -fx-pref-width: 80;
+    -fx-pref-height: 40;
+    -fxbackground-color: #2196f3 ; !important;
+    -fx-text-fill: #000000;
+    -fx-font-size: 1.1em;
+    -fx-alignemt: center_left;
+
+}
+
+.report_container Button:hover{
+    -fx-cursor: hand;
+
+}

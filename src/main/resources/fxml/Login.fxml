@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../styles/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.controller.LoginController">
+   <children>
+      <VBox layoutX="6.0" layoutY="3.0" prefHeight="378.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" />
+
+
+
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PARKIT" wrappingWidth="76.16015625" />
+         </children>
+      </VBox>
+      <VBox layoutX="214.0" layoutY="25.0" prefHeight="360.0" prefWidth="354.0" styleClass="login_form_container" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label id="choice-prompt_text" text="CHOOSE YOUR ACCOUNT TYPE:" />
+            <ChoiceBox fx:id="acc_selector" prefWidth="150.0" styleClass="account_selector" />
+            <Label fx:id="payee_address_lbl" prefHeight="24.0" prefWidth="359.0" text="EMAIL ADDRESS" />
+            <TextField fx:id="payee_address_fld" prefHeight="10.0" prefWidth="354.0" styleClass="input_field" />
+            <Label prefHeight="24.0" prefWidth="402.0" text="PASSWORD" />
+            <TextField fx:id="password_fld" prefHeight="11.0" prefWidth="354.0" styleClass="input_field" />
+            <Button fx:id="login_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="360.0" text="Login" />
+            <Label fx:id="error_lbl" prefHeight="74.0" prefWidth="354.0" styleClass="error_lbl" />
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

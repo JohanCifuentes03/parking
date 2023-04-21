@@ -1,0 +1,74 @@
+.dashboard{
+    -fx-background-color:#DFDFDF;
+}
+
+.dashboard Text {
+    -fx-fill: black;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+.user_name{
+    -fx-font-size: 2.6em;
+    -fx-font-family:"Calibri Light" ;
+}
+
+.date_lbl{
+    -fx-text-fill: gray;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+
+}
+
+.car_view{
+    -fx-background-color: #FBFBFF ;
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 10 10 10 10;
+    -fx-alignment: left;
+    -fx-border-width: 0 0 0 0;
+}
+
+.car{
+    -fx-background-color: #0B4F6C ;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gray, 10 , 0, 0, 10);
+}
+
+.car Text{
+
+    -fx-fill: #FBFBFF;
+    -fx-spacing: 10;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.car_checking_wallet{
+    -fx-background-color: linear-gradient(to right, #0C8EB1, #0B4F6C);
+    -fx-background-radius: 5;
+    -fx-padding: 10 0 10 10;
+
+}
+.Label {
+
+    -fx-fill: green;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.input_field{
+    -fx-pref-height: 35;
+    -fx-font-size: 1.3em;
+    -fx-background-color: transparent;
+    -fx-border-style: none none solid none;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: black;
+
+}
+
+
+
+
+
+
+
+
+
