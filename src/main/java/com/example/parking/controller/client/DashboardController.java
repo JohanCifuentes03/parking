@@ -26,8 +26,6 @@ public class DashboardController implements Initializable {
     public WebEngine engine;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        engine = webView_maps.getEngine();
-        engine.load("https://www.google.com/maps/@4.6368105,-74.1897969,14z");
     }
 
 

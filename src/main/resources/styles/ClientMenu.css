@@ -74,7 +74,7 @@
 .report_container Button{
     -fx-pref-width: 80;
     -fx-pref-height: 40;
-    -fxbackground-color: #2196f3 ; !important;
+    -fxbackground-color: #2196f3 ;
     -fx-text-fill: #000000;
     -fx-font-size: 1.1em;
     -fx-alignemt: center_left;

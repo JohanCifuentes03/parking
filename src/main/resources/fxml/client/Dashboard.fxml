@@ -3,13 +3,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../styles/Dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.controller.client.DashboardController">
    <children>
@@ -46,12 +47,15 @@
                </children>
             </VBox>
          </children></HBox>
-
-      <WebView fx:id="webView_maps" layoutX="17.0" layoutY="296.0" prefHeight="440.0" prefWidth="620.0" styleClass="car" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
-      <ListView fx:id="parking_spaces" layoutX="650.0" layoutY="347.0" prefHeight="383.0" prefWidth="180.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <ListView fx:id="parking_spaces" layoutX="659.0" layoutY="343.0" prefHeight="383.0" prefWidth="180.0" AnchorPane.bottomAnchor="24.0" AnchorPane.rightAnchor="11.0" />
       <Text layoutX="20.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Where to park?" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="258.05078125" />
       <Text layoutX="748.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available places " AnchorPane.rightAnchor="14.0" />
       <Text layoutX="747.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for places" AnchorPane.rightAnchor="13.228515625" AnchorPane.topAnchor="258.05078125" />
       <TextField fx:id="parking_input" layoutX="650.0" layoutY="273.0" prefHeight="25.0" prefWidth="180.0" styleClass="input_field" />
+      <ImageView fitHeight="446.0" fitWidth="622.0" layoutX="20.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/maps.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
