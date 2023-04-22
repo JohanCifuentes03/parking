@@ -1,5 +1,6 @@
 package com.example.parking.controller.client;
 
+import com.example.parking.model.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -8,14 +9,25 @@ import java.util.ResourceBundle;
 
 public class ClientMenuController implements Initializable {
     public Button dashboard_btn;
-    public Button reservation_btn;
-    public Button parking_btn;
     public Button profile_btn;
     public Button logout_btn;
     public Button report_btn;
+    public Button reserve_btn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        addListeners();
+    }
 
+    private void addListeners(){
+        dashboard_btn.setOnAction(event -> onDashboard());
+        reserve_btn.setOnAction(event -> onReserve());
+    }
+
+    private void onDashboard (){
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Dashboard");
+    }
+    private void onReserve (){
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Reserve");
     }
 }

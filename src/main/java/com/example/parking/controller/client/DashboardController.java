@@ -16,14 +16,12 @@ public class DashboardController implements Initializable {
     public Label login_date;
     public Label savings;
     public Label last_expense;
-    public WebView   webView_maps;
     public ListView  parking_spaces;
     public TextField parking_input;
     public Text car_name;
     public Text car_model;
     public Text car_id;
     public Text car_type;
-    public WebEngine engine;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }

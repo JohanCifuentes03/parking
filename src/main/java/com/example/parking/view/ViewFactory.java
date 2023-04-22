@@ -1,6 +1,8 @@
 package com.example.parking.view;
 
 import com.example.parking.controller.client.ClientController;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -8,9 +10,18 @@ import javafx.stage.Stage;
 
 public class ViewFactory {
     // Client view
+    private final StringProperty clientSelectedMenuItem;
     private AnchorPane dashboardView;
+    private AnchorPane reservationsView;
 
-    public ViewFactory(){}
+
+    public ViewFactory(){
+        this.clientSelectedMenuItem = new SimpleStringProperty("");
+    }
+
+    public StringProperty getClientSelectedMenuItem() {
+        return clientSelectedMenuItem;
+    }
 
     public AnchorPane getDashboardView(){
         if (dashboardView == null){
@@ -22,6 +33,18 @@ public class ViewFactory {
 
         }
     return dashboardView;
+    }
+
+    public AnchorPane getReservationsView() {
+        if (reservationsView == null){
+            try{
+                reservationsView = new FXMLLoader(getClass().getResource("/fxml/Client/Reserve.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+        return reservationsView;
     }
 
     public void showLoginWindow(){
@@ -48,6 +71,10 @@ public class ViewFactory {
         stage.setScene(scene);
         stage.setTitle("Parking");
         stage.show();
+    }
+
+    public void closeStage(Stage stage){
+        stage.close();
     }
 
 

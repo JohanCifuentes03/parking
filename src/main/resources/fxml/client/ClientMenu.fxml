@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu" stylesheets="@../../styles/ClientMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu" stylesheets="@../../styles/ClientMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.controller.client.ClientMenuController">
    <children>
       <VBox layoutX="19.0" layoutY="11.0" prefHeight="152.0" prefWidth="180.0" styleClass="up_container_title" AnchorPane.bottomAnchor="597.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -22,17 +22,17 @@
       </VBox>
       <VBox layoutX="3.0" layoutY="153.0" prefHeight="418.0" prefWidth="180.0" styleClass="middle_container" AnchorPane.bottomAnchor="179.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="153.0">
          <children>
-            <Button mnemonicParsing="false" text="DASHBOARD" />
-            <Button mnemonicParsing="false" text="RESERVE" />
+            <Button fx:id="dashboard_btn" mnemonicParsing="false" text="DASHBOARD" />
+            <Button fx:id="reserve_btn" mnemonicParsing="false" text="RESERVE" />
             <Line endX="139.5" startX="253.7928924560547" startY="-3.0416250228881836E-4" />
-            <Button mnemonicParsing="false" styleClass="Button" text="PROFILE" />
-            <Button mnemonicParsing="false" styleClass="Button" text="LOGOUT" />
+            <Button fx:id="profile_btn" mnemonicParsing="false" styleClass="Button" text="PROFILE" />
+            <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="Button" text="LOGOUT" />
          </children>
       </VBox>
       <VBox layoutX="9.0" layoutY="571.0" prefHeight="87.0" prefWidth="160.0" styleClass="report_container" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="-1.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Report a bug?" />
-            <Button mnemonicParsing="false" styleClass="Button" text="Button" />
+            <Button fx:id="report_btn" mnemonicParsing="false" styleClass="Button" text="Report" />
          </children></VBox>
    </children>
 </AnchorPane>

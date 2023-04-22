@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="reserve_container" stylesheets="@../../styles/Reserve.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.controller.client.ReserveController">
+   <children>
+      <Text layoutX="164.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active Reserve" AnchorPane.leftAnchor="164.0" />
+      <Text layoutX="568.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History Reserve" />
+      <Text layoutX="387.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve" />
+      <ListView fx:id="active_reserve_listView" layoutX="19.0" layoutY="537.0" prefHeight="186.0" prefWidth="390.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="440.0" />
+      <ListView fx:id="history_reserve_listView" layoutX="428.0" layoutY="537.0" prefHeight="186.0" prefWidth="390.0" AnchorPane.rightAnchor="20.0" />
+      <Text layoutX="37.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make a reservation" AnchorPane.leftAnchor="20.0" />
+      <ListView fx:id="reservation_listView" layoutX="20.0" layoutY="125.0" prefHeight="256.0" prefWidth="530.0" />
+      <Label fx:id="confirmation_lbl" layoutX="662.0" layoutY="172.0" prefHeight="17.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>
