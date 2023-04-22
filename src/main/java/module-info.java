@@ -1,12 +1,9 @@
-module com.example.mazebank {
+module com.example.parking {
     requires javafx.controls;
     requires javafx.fxml;
-    //requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
     requires ojdbc8;
     requires javafx.web;
-    //requires org.kordamp.bootstrapfx.core;
-
     opens com.example.parking to javafx.fxml;
     exports com.example.parking;
     exports com.example.parking.controller;
