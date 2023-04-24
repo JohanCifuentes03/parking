@@ -22,7 +22,9 @@ public class DashboardController implements Initializable {
     public Text car_type;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
+
 
 
 }
